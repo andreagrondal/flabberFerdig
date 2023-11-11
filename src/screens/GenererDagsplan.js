@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView} from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator} from 'react-native';
 import { Button } from 'react-native-paper';
 
 
 export default function GenererDagsplan({navigation}) {
     const [inputValue, setInputValue] = useState('');
-    const [response, setResponse] = useState(''); // For å lagre svaret fra GPT-3
+    const [response, setResponse] = useState(''); // For å lagre svaret fra GPT
+    const [isLoading, setIsLoading] = useState(false);
+
 
     const handleGeneratePlan = async () => {
+        setIsLoading(true); 
         try {
             // Send input til backend for å få svar fra GPT-3 ved bruk av fetch
-            const response = await fetch(`http://10.111.16.10:4040/${inputValue}`, {
+            const response = await fetch(`http://192.168.10.116:4040/generateDay`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -31,9 +34,10 @@ export default function GenererDagsplan({navigation}) {
             
         } catch (error) {
             console.error("Feil ved henting av svar:", error);
-        }
+        } finally {
+          setIsLoading(false);
         
-    };
+    }};
     
     return(
         <ScrollView style={styles.container}>
@@ -48,8 +52,12 @@ export default function GenererDagsplan({navigation}) {
                 multiline={true}
             />
 
-            <TouchableOpacity style={styles.button} onPress={handleGeneratePlan}>
+            <TouchableOpacity style={styles.button} onPress={handleGeneratePlan} disabled={isLoading}>
+              {isLoading ? (
+                <ActivityIndicator size="large" color="#000" />
+              ) : (
                 <Text style={styles.buttonText}>Generer dagsplan</Text>
+              )}
             </TouchableOpacity>
             <Text style={styles.responseText}>{response}</Text>
 

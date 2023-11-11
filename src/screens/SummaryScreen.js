@@ -13,7 +13,7 @@ export default function SummaryScreen({route, navigation}) {
   const sendPreferencesToServer = async () => {
     setIsLoading(true);
     try {
-        const response = await fetch('http://10.111.83.140:4040/generateTravelPlan', {
+        const response = await fetch('http://192.168.10.116:4040/generateTravelPlan', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
