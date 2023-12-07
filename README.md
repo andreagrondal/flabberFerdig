@@ -68,9 +68,21 @@ git clone [repository link]
 cd flaskBackend
 ```
 
-3. Do the same as you did when opening the folder from Finder on your local computer. 
-
-4. Start the Flask server (by pressing the run button or the command under)
+3. Do the same as in the step with the frontend. Open the folder and open flaskBackend from finder on your computer.
+   
+4. Install these commands in the terminal:
+   ```bash
+   pip install openai
+   ```
+   ```bash
+   pip install Flask
+   ```
+   ```bash
+   pip install os
+   ```
+5. You need to take in your own OpenAI API key, where it says "YOUR API KEY HERE".
+   
+6. Start the Flask server (by pressing the run button or the command under). Make sure you run the main.py file.
 ```bash
 flask run
 ```
