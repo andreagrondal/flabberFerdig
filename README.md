@@ -12,6 +12,18 @@ The tools and technologies needed to run your project:
 - Git (optional for cloning the repository)
 
 ## Installation 
+## Before you open the files
+We are going to open these two project in Visual Studio code. 
+
+1. Start by opening Visual Studio code on your computer. You will need one window for the frontend and one for the backend. (to do that open first one window. To open a new window press file in the top left corner of your screen. -> new window)
+```bash
+open VScode -> file -> new window
+```
+3. Open the terminal in Visual Studio code. You will use the seperate terminals in the window for each project.
+
+In the next step we will open the backend in one of the windows you now have open.
+
+
 ## Setting up the React Native frontend
 
 Link to repository: https://github.com/andreagrondal/flabberFerdig 
@@ -25,6 +37,9 @@ git clone [repository link]
 ```bash
 cd flabberFerdig
 ```
+
+In VScode open explorer (the icon that looks like two papers) and open folder. Find the respitory folder in finder local on your computer and press open.
+
 When in the directory: run this command in the terminal
 ```bash
 npm install
@@ -39,6 +54,8 @@ npx expo start --tunnel
 5. Now you can navigate through the frontend interface. Next, we need to set up the backend.
 
 ## Setting up the python Flask backend
+Now you have to go into the other new window we opened before we started on the frontend project.
+Open the terminal:
 
 Link to repository: https://github.com/andreagrondal/flaskBackend 
 
@@ -50,16 +67,10 @@ git clone [repository link]
 ```bash
 cd flaskBackend
 ```
-3. Create a virtual environment (optional but recommended)
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-4. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-5. Start the Flask server (by pressing the run button or the command under)
+
+3. Do the same as you did when opening the folder from Finder on your local computer. 
+
+4. Start the Flask server (by pressing the run button or the command under)
 ```bash
 flask run
 ```
