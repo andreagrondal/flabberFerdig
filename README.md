@@ -80,9 +80,21 @@ cd flaskBackend
    ```bash
    pip install -U flask-cors
    ```
-5. You need to take in your own OpenAI API key, where it says "YOUR API KEY HERE".
+5. Open the main.py file
    
-6. Start the Flask server (by pressing the run button or the command under). Make sure you run the main.py file.
+6. You need to take in your own OpenAI API key, where it says 'YOUR API KEY HERE'.
+
+```bash
+openai.api_key = 'YOUR API_KEY HERE!'
+```
+NB! Remeber to include '..' on each side of your API key. 
+So it will look something like this:
+
+```bash
+open.api_key = 'sk-123...'
+```
+   
+7. Start the Flask server (by pressing the run button or the command under). Make sure you run the main.py file.
 ```bash
 flask run
 ```
