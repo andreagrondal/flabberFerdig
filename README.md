@@ -140,7 +140,7 @@ export default function GenererDagsplan({navigation}) {
 In the code, you are going to change the numbers after "http://" to the numbers you copied in the backend project terminal.
 
 ```bash
- const response = await fetch(`CHANGE THIS NUMBERS/generateDay`
+ const response = await fetch(`http://CHANGE THIS NUMBERS/generateDay`
 ```
 
 The numbers in the backend project and frontend project must always match to make the prototype work.
