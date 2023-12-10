@@ -137,7 +137,7 @@ export default function GenererDagsplan({navigation}) {
             });
 ```
 
-In the code, you are going to change the numbers after "http://" to the numbers you copied in the backend project terminal.
+In the code, you are going to change the numbers after "http://" to the numbers from the THIRD IP address you copied in the backend project terminal.
 
 ```bash
  const response = await fetch(`http://CHANGE THIS NUMBERS/generateDay`
