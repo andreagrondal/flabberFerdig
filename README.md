@@ -89,19 +89,18 @@ flask run
 
 ## Usage
 
-In the backend project, you need to take in your own OpenAI API key, where it says "YOUR API KEY HERE".
-Also, the server is running on your IP address, so when you run the backend file, you will get three different addresses.
-It will look something like this:
+If your backend is running correctly. It will look something like this:
 ```bash
 * Running on all addresses (0.0.0.0)
 * Running on http://127.0.0.1:4040
 * Running on http://10.111.80.161:4040
 ```
-You will copy the last IP address from 10.111.80.161:4040. (NB! These numbers will differ from which IP adress you are on)
+You will copy the third IP address from after HTTP://. In this case that means 10.111.80.161:4040. (NB! These numbers will differ from which IP adress you are on. So on your computer make sure to copy the THIRD IP address)
 
 After copying these numbers and making sure your server is running, we move over to the React Native project.
 
-You are now in the React Native project and will open: src folder -> screens -> GenererDagsplan.js
+### Move to frontend in VScode
+You are now in the React Native project and will open these folders which you can find on the left side: src  -> screens -> GenererDagsplan.js
 In the GenererDagsplan.js file, you will see this code at the start:
 
 ```python
