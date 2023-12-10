@@ -70,7 +70,13 @@ cd flaskBackend
 
 3. Do the same as in the step with the frontend. Open the folder and open flaskBackend from finder on your computer.
    
-4. Install these commands in the terminal (pip3 on mac, if pip does not work):
+4. Install virtual environment
+
+   ```bash
+   source venv/bin/activate
+   ```
+   
+5. Install these commands in the terminal (pip3 on mac, if pip does not work):
    ```bash
    pip install openai
    ```
@@ -80,9 +86,9 @@ cd flaskBackend
    ```bash
    pip install -U flask-cors
    ```
-5. Open the main.py file
+6. Open the main.py file
    
-6. You need to take in your own OpenAI API key, where it says 'YOUR API KEY HERE'.
+7. You need to take in your own OpenAI API key, where it says 'YOUR API KEY HERE'.
 
 ```bash
 openai.api_key = 'YOUR API_KEY HERE!'
@@ -94,7 +100,7 @@ So it will look something like this:
 open.api_key = 'sk-123...'
 ```
    
-7. Start the Flask server (by pressing the run button or the command under). Make sure you run the main.py file.
+8. Start the Flask server (by pressing the run button or the command under). Make sure you run the main.py file.
 ```bash
 flask run
 ```
