@@ -101,13 +101,13 @@ flask run
 
 ## Usage
 
-If your backend is running correctly. It will look something like this:
+If your backend is running correctly. You will see this in the terminal:
 ```bash
 * Running on all addresses (0.0.0.0)
 * Running on http://127.0.0.1:4040
 * Running on http://10.111.80.161:4040
 ```
-You will copy the third IP address from after HTTP://. In this case that means 10.111.80.161:4040. (NB! These numbers will differ from which IP adress you are on. So on your computer make sure to copy the THIRD IP address)
+You will copy the third IP address from after HTTP://. In this case that means 10.111.80.161:4040. (NB! These numbers will differ from which IP address you are on. So on your computer make sure to copy the THIRD IP address and the numbers that match your terminal.)
 
 After copying these numbers and making sure your server is running, we move over to the React Native project.
 
