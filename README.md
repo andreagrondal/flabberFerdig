@@ -125,7 +125,7 @@ export default function GenererDagsplan({navigation}) {
             });
 ```
 
-In the code, you are going to change the numbers after "http://" to the numbers you copied in the backend project.
+In the code, you are going to change the numbers after "http://" to the numbers you copied in the backend project terminal.
 
 ```bash
  const response = await fetch(`CHANGE THIS NUMBERS/generateDay`
@@ -135,7 +135,7 @@ The numbers in the backend project and frontend project must always match to mak
 
 
 ## Troubleshooting
-Fylle inn dette etter en person har prøvd å åpne prosjektt på sin pc og evt møtt på problemer. 
+If you have problems make sure you have installed all the necessary packages and modules.
 
 
 ## NOTE
